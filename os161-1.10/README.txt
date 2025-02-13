@@ -1,3 +1,14 @@
+Name: Meghan Murphy
+COMP 3500 - Project 2
+
+### Completed Tasks:
+- Successfully built Binutils and GCC.
+- Git is set up and commits exist.
+- Reading Code section is completed.
+- Encountered fatal errors with System/161 that prevented OS/161 execution.
+- Unable to run OS/161 due to missing sys161 configuration.
+- Submitting work completed for partial credit.
+
 ### Reading Code Section
 
 - `kern/main/main.c`: This is the main entry point of OS/161. It performs the **initial kernel boot sequence**, initializes core components like the console, thread scheduler, and virtual memory system. It also prints the OS version and build information.
@@ -13,3 +24,16 @@
 4. **The kernel executes the requested operation** and **returns control to the user program**.
 
 This analysis is based on reviewing OS/161 source code.
+
+### Debugging with GDB
+
+Although I was unable to fully debug OS/161, I researched the GDB debugging process. OS/161 uses `sys161-gdb` for debugging, and the common workflow is:
+
+1. Compile OS/161 with debugging symbols using `-g` flag.
+2. Run `sys161 -w kernel` to start OS/161 in debug mode.
+3. Use `gdb kernel` to attach to the running instance.
+4. Set breakpoints with `break function_name` and step through execution.
+
+Due to the Sys161 failure, I could not fully execute these steps, but I understand the debugging process.
+
+
